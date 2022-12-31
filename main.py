@@ -11,6 +11,8 @@ def is_valid(newval):
         label["text"] = "Your card is VISA"
     elif valid_masterc:
         label["text"] = "Your card is Master Card"
+    else:
+        label["text"] = "We dont support this card"
 
 root = tk.Tk()
 root.title("Card Validator")
